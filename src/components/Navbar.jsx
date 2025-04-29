@@ -17,7 +17,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.svg";
 import LogoutIcon from '@mui/icons-material/Logout';
 
 const Dropdown = ({ title, items }) => {
