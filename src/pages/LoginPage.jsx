@@ -129,7 +129,7 @@ import React, { useState } from "react";
 import { TextField, Button, Container, Typography, Box, Paper, Link } from "@mui/material";
 import API from "../api/axios";
 import { useNavigate, Link as RouterLink } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.svg";
 import Globe from "../assets/globe2.png"; // Ensure the path is correct
 
 const LoginPage = () => {
