@@ -63,7 +63,7 @@ export default function ProductsAndServices() {
               elevation={0}
               sx={{
                 width: "100%",
-                maxWidth: "360px",
+                maxWidth: "250px",
                 borderRadius: 4,
                 overflow: "hidden",
                 backgroundColor: "#fff",
@@ -87,7 +87,7 @@ export default function ProductsAndServices() {
                   alt={product.title}
                   sx={{
                     width: "100%",
-                    height: 220,
+                    height: 150,
                     objectFit: "cover",
                     borderRadius: 2,
                   }}

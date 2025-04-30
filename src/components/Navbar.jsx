@@ -90,91 +90,64 @@ const Navbar = () => {
 
   const drawerList = (
     <Box
-      sx={{ width: 250, bgcolor: "#e8e8e8", height: "100%", color: "#e8e8e8" }}
+      sx={{ width: 250, bgcolor: "#e8e8e8", height: "100%" }}
       role="presentation"
       onClick={() => setDrawerOpen(false)}
       onKeyDown={() => setDrawerOpen(false)}
     >
       <List>
-        <ListItem
-          button
-          component={Link}
-          to="/whychooseus"
-          sx={{ textDecoration: "none", color: "#e8e8e8" }}
-        >
-          <ListItemText primary="Why Choose Us" sx={{ color: "#e8e8e8" }} />
+        <ListItem button component={Link} to="/whychooseus">
+          <ListItemText
+            primary="Why Choose Us"
+            primaryTypographyProps={{ style: { color: "#404040" } }}
+          />
         </ListItem>
-        <ListItem
-          button
-          component={Link}
-          to="/productsServices"
-          sx={{ textDecoration: "none", color: "#e8e8e8" }}
-        >
+        <ListItem button component={Link} to="/productsServices">
           <ListItemText
             primary="Products & Services"
-            sx={{ color: "#e8e8e8" }}
+            primaryTypographyProps={{ style: { color: "#404040" } }}
           />
         </ListItem>
         <Divider sx={{ bgcolor: "#1f2b4a" }} />
-        <ListItem
-          button
-          component={Link}
-          to="/home/opps/register"
-          sx={{ textDecoration: "none", color: "#e8e8e8" }}
-        >
-          <ListItemText primary="Register Deal" sx={{ color: "#e8e8e8" }} />
+        <ListItem button component={Link} to="/home/opps/register">
+          <ListItemText
+            primary="Register Deal"
+            primaryTypographyProps={{ style: { color: "#404040" } }}
+          />
         </ListItem>
-        <ListItem
-          button
-          component={Link}
-          to="/home/opps/registered"
-          sx={{ textDecoration: "none", color: "#e8e8e8" }}
-        >
+        <ListItem button component={Link} to="/home/opps/registered">
           <ListItemText
             primary="View Registered Deals"
-            sx={{ color: "#e8e8e8" }}
+            primaryTypographyProps={{ style: { color: "#404040" } }}
           />
         </ListItem>
-        <ListItem
-          button
-          component={Link}
-          to="/home/opps/opportunities"
-          sx={{ textDecoration: "none", color: "#e8e8e8" }}
-        >
+        <ListItem button component={Link} to="/home/opps/opportunities">
           <ListItemText
             primary="View Opportunities"
-            sx={{ color: "#e8e8e8" }}
+            primaryTypographyProps={{ style: { color: "#404040" } }}
           />
         </ListItem>
         <Divider sx={{ bgcolor: "#1f2b4a" }} />
-        <ListItem
-          button
-          component={Link}
-          to="/university"
-          sx={{ textDecoration: "none", color: "#e8e8e8" }}
-        >
+        <ListItem button component={Link} to="/university">
           <ListItemText
             primary="Partner University"
-            sx={{ color: "#e8e8e8" }}
+            primaryTypographyProps={{ style: { color: "#404040" } }}
           />
         </ListItem>
-        <ListItem
-          button
-          component={Link}
-          to="/assets"
-          sx={{ textDecoration: "none", color: "#e8e8e8" }}
-        >
-          <ListItemText primary="Assets" sx={{ color: "#e8e8e8" }} />
+        <ListItem button component={Link} to="/assets">
+          <ListItemText
+            primary="Assets"
+            primaryTypographyProps={{ style: { color: "#404040" } }}
+          />
         </ListItem>
         {user && (
           <>
             <Divider sx={{ bgcolor: "#1f2b4a" }} />
-            <ListItem
-              button
-              onClick={handleLogout}
-              sx={{ textDecoration: "none", color: "#e8e8e8" }}
-            >
-              <ListItemText primary="Logout" sx={{ color: "#e8e8e8" }} />
+            <ListItem button onClick={handleLogout}>
+              <ListItemText
+                primary="Logout"
+                primaryTypographyProps={{ style: { color: "#404040" } }}
+              />
             </ListItem>
           </>
         )}
