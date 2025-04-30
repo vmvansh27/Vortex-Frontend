@@ -1,9 +1,9 @@
 import { Box, Typography, Grid, Paper, Link } from "@mui/material";
-import OmniCompressor from "../assets/omniCompressor.png";
-import OmniStream from "../assets/omniStream.png";
-import OmniImage from "../assets/omniImage.png";
-import OmniMedical from "../assets/omniMedical.png"; // Add these images
-import OmniViewer from "../assets/omniViewer.png";
+import OmniCompressor from "../assets/OmniCompressor.png";
+import OmniStream from "../assets/OmniStream.png";
+import OmniImage from "../assets/OmniImage.png";
+import OmniMedical from "../assets/OmniMedical.png"; // Add these images
+import OmniViewer from "../assets/OmniViewer.png";
 import Navbar from "../components/Navbar";
 
 export default function ProductsAndServices() {
