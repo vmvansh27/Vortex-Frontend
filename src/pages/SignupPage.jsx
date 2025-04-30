@@ -122,8 +122,8 @@ import React, { useState } from "react";
 import { TextField, Button, Container, Typography, Box, Paper, Link } from "@mui/material";
 import API from "../api/axios";
 import { useNavigate, Link as RouterLink } from "react-router-dom";
-import Logo from "../assets/logo.svg";
-import Globe from "../assets/globe2.png"; // make sure this matches your folder structure
+// import Logo from "../assets/logo.svg";
+// import Globe from "../assets/globe2.png"; // make sure this matches your folder structure
 
 const SignupPage = () => {
     const [formData, setFormData] = useState({ name: "", email: "", password: "" });
@@ -148,7 +148,8 @@ const SignupPage = () => {
     return (
         <Box
             sx={{
-                backgroundColor: '#060D18',
+                background:
+                    "linear-gradient(to bottom,rgb(11, 6, 6),rgb(31, 11, 13), #45171d)",
                 minHeight: '100vh',
                 display: 'flex',
                 alignItems: 'center',
@@ -158,7 +159,7 @@ const SignupPage = () => {
             }}
         >
             {/* Top-left logo + India */}
-            <Box
+            {/* <Box
                 sx={{
                     position: "absolute",
                     top: 20,
@@ -170,10 +171,10 @@ const SignupPage = () => {
             >
                 <img src={Logo} alt="logo" height="40" />
                 <Typography sx={{ color: "#CDC9CE", fontWeight: 600 }}>India</Typography>
-            </Box>
+            </Box> */}
 
             {/* Globe image */}
-            <Box
+            {/* <Box
                 sx={{
                     position: "absolute",
                     top: "10%",
@@ -182,7 +183,7 @@ const SignupPage = () => {
                 }}
             >
                 <img src={Globe} alt="globe" style={{ height: 600 }} />
-            </Box>
+            </Box> */}
 
             {/* Signup container */}
             <Container maxWidth="xs" sx={{ position: "relative", zIndex: 1 }}>
@@ -314,9 +315,9 @@ const SignupPage = () => {
                             variant="contained"
                             sx={{
                                 mt: 3,
-                                backgroundColor: '#0f1b30',
+                                backgroundColor: '#b00610',
                                 '&:hover': {
-                                    backgroundColor: '#0b1626',
+                                    backgroundColor: '#a00610',
                                 },
                                 py: 1.5,
                                 fontWeight: 'bold',
